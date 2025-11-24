@@ -54,23 +54,17 @@ export const Mission: React.FC = () => {
             {/* Main Image */}
             <img 
                src="images/mission-cyber.jpg" 
-               alt="Cybersecurity Interface" 
-               className="w-full h-full object-cover opacity-60 mix-blend-overlay"
+               className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out"
+               alt="Abstract Tech"
             />
             
             {/* Tech Overlay Lines */}
-            <div className="absolute inset-0 p-8 flex flex-col justify-between z-10 pointer-events-none">
-                <div className="w-full h-[1px] bg-white/30 group-hover:bg-white/50 transition-colors duration-500"></div>
-                <div className="space-y-8">
-                   {/* Decorative elements */}
-                </div>
+            <div className="absolute inset-0 p-8 flex flex-col justify-end z-10 pointer-events-none">
+                <div className="w-full h-[1px] bg-white/30 group-hover:bg-white/50 transition-colors duration-500 mb-4"></div>
                 <div className="flex justify-between items-end">
                     <div className="font-mono text-xs text-white/70 group-hover:text-white transition-colors duration-500">
                         FIG 01.1<br/>
                         NETWORK TOPOLOGY
-                    </div>
-                    <div className="w-12 h-12 border border-white/30 flex items-center justify-center group-hover:border-white transition-colors duration-500">
-                        <div className="w-2 h-2 bg-white"></div>
                     </div>
                 </div>
             </div>

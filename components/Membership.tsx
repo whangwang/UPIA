@@ -57,25 +57,25 @@ export const Membership: React.FC = () => {
           <div className="lg:w-1/2">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <BenefitCard 
-                image="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
+                image="images/membership-global.jpg"
                 title="Global Access" 
                 description="Direct introductions to government stakeholders across Taiwan, Japan, and the U.S."
                 delay={0.1}
               />
               <BenefitCard 
-                image="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2670&auto=format&fit=crop"
+                image="images/membership-network.jpg"
                 title="Industrial Network" 
                 description="Connect with vetted suppliers and manufacturing partners in the APAC region."
                 delay={0.2}
               />
               <BenefitCard 
-                image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop"
+                image="images/membership-policy.jpg"
                 title="Policy Intel" 
                 description="Exclusive briefings on regulatory shifts, export controls, and defense budgets."
                 delay={0.3}
               />
               <BenefitCard 
-                image="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop"
+                image="images/membership-integration.jpg"
                 title="Integration" 
                 description="Opportunities for cross-domain capability testing and co-production pilots."
                 delay={0.4}
@@ -98,7 +98,7 @@ export const Membership: React.FC = () => {
                 {/* Hover Background Image */}
                 <div className={`absolute inset-0 z-0 transition-opacity duration-700 ease-out ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
                   <img 
-                    src="/images/rocket-launch.jpg" 
+                    src="images/rocket-launch.jpg" 
                     alt="Rocket Launch" 
                     className="w-full h-full object-cover"
                   />

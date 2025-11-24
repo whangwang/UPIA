@@ -15,11 +15,11 @@ export const Hero: React.FC = () => {
           playsInline
           className="w-full h-full object-cover object-left opacity-100 mix-blend-overlay"
         >
-          <source src="/videos/hero.webm" type="video/webm" />
-          <source src="/videos/hero.mp4" type="video/mp4" />
+          <source src="videos/hero.webm" type="video/webm" />
+          <source src="videos/hero.mp4" type="video/mp4" />
           {/* Fallback image */}
           <img 
-            src="/videos/hero.jpg" 
+            src="videos/hero.jpg" 
             alt="Autonomous Maritime System"
             className="w-full h-full object-cover object-left"
           />

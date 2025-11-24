@@ -7,28 +7,32 @@ interface TeamMember {
   name: string;
   role: string;
   image: string;
+  bio?: string; // Added bio as optional
 }
 
 const team: TeamMember[] = [
   {
     name: "James Chen",
     role: "Executive Director",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2574&auto=format&fit=crop"
+    image: "images/team-1.jpg"
   },
   {
-    name: "Sarah Vance",
-    role: "Head of Strategy",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576&auto=format&fit=crop"
+    name: "Dr. Sarah Chen",
+    role: "Chief Technology Officer",
+    bio: "Former DARPA program manager specializing in autonomous systems and AI integration.",
+    image: "images/team-2.jpg"
   },
   {
-    name: "Adm. Robert H.",
-    role: "Senior Advisor",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2670&auto=format&fit=crop"
+    name: "Marcus Thorne",
+    role: "Director of Operations",
+    bio: "20-year veteran of naval logistics and supply chain resilience strategy.",
+    image: "images/team-3.jpg"
   },
   {
-    name: "Elena Rossi",
-    role: "Partnerships Lead",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2661&auto=format&fit=crop"
+    name: "Elena Rodriguez",
+    role: "Head of Policy",
+    bio: "Expert in international defense cooperation and export control regulations.",
+    image: "images/team-4.jpg"
   }
 ];
 

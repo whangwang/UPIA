@@ -53,9 +53,9 @@ export const Mission: React.FC = () => {
           >
             {/* Main Image */}
             <img 
-               src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop" 
-               className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out"
-               alt="Abstract Tech"
+               src="images/mission-cyber.jpg" 
+               alt="Cybersecurity Interface" 
+               className="w-full h-full object-cover opacity-60 mix-blend-overlay"
             />
             
             {/* Tech Overlay Lines */}

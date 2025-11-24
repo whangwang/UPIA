@@ -49,34 +49,34 @@ export const Mission: React.FC = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="relative h-[600px] w-full bg-slate-100 overflow-hidden"
+            className="relative h-[600px] w-full bg-slate-100 overflow-hidden group cursor-pointer"
           >
             {/* Main Image */}
             <img 
                src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop" 
-               className="absolute inset-0 w-full h-full object-cover grayscale opacity-100"
+               className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out"
                alt="Abstract Tech"
             />
             
             {/* Tech Overlay Lines */}
             <div className="absolute inset-0 p-8 flex flex-col justify-between z-10 pointer-events-none">
-                <div className="w-full h-[1px] bg-white/30"></div>
+                <div className="w-full h-[1px] bg-white/30 group-hover:bg-white/50 transition-colors duration-500"></div>
                 <div className="space-y-8">
                    {/* Decorative elements */}
                 </div>
                 <div className="flex justify-between items-end">
-                    <div className="font-mono text-xs text-white/70">
+                    <div className="font-mono text-xs text-white/70 group-hover:text-white transition-colors duration-500">
                         FIG 01.1<br/>
                         NETWORK TOPOLOGY
                     </div>
-                    <div className="w-12 h-12 border border-white/30 flex items-center justify-center">
+                    <div className="w-12 h-12 border border-white/30 flex items-center justify-center group-hover:border-white transition-colors duration-500">
                         <div className="w-2 h-2 bg-white"></div>
                     </div>
                 </div>
             </div>
             
-            {/* Blue Tint Overlay */}
-            <div className="absolute inset-0 bg-navy-900/20 mix-blend-overlay"></div>
+            {/* Blue Tint Overlay - fades out on hover to show true color */}
+            <div className="absolute inset-0 bg-navy-900/20 mix-blend-overlay group-hover:opacity-0 transition-opacity duration-700"></div>
           </motion.div>
 
         </div>

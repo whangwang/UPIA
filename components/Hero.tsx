@@ -5,19 +5,31 @@ import { ArrowRight } from 'lucide-react';
 export const Hero: React.FC = () => {
   return (
     <section className="relative h-screen min-h-[700px] flex items-center overflow-hidden bg-navy-900">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=2670&auto=format&fit=crop"
-          alt="Autonomous Maritime System"
-          className="w-full h-full object-cover opacity-50"
-        />
+        <div className="absolute inset-0 bg-navy-900 z-0"></div>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-60 mix-blend-overlay"
+        >
+          <source src="https://videos.pexels.com/video-files/854238/854238-hd_1920_1080_30fps.mp4" type="video/mp4" />
+          {/* Fallback image */}
+          <img 
+            src="https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=2670&auto=format&fit=crop" 
+            alt="Autonomous Maritime System"
+            className="w-full h-full object-cover"
+          />
+        </video>
+        
         {/* Gradients for text legibility */}
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-900/60 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-900/80 to-navy-900/20 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent z-10"></div>
       </div>
 
-      <div className="relative z-10 w-full max-w-screen-2xl mx-auto px-6 lg:px-12 pt-20">
+      <div className="relative z-20 w-full max-w-screen-2xl mx-auto px-6 lg:px-12 pt-20">
         <div className="max-w-5xl">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -73,7 +85,7 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Tech Decoration */}
-      <div className="absolute bottom-12 right-12 hidden lg:block opacity-50">
+      <div className="absolute bottom-12 right-12 hidden lg:block opacity-50 z-20">
         <div className="text-right font-mono text-xs text-white space-y-1">
           <p>STATUS: OPERATIONAL</p>
           <p>GRID: PACIFIC-01</p>

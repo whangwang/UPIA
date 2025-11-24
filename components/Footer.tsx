@@ -23,29 +23,6 @@ export const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-          
-          <div className="flex gap-12 md:gap-24">
-            <div>
-              <h4 className="font-bold uppercase tracking-widest text-xs mb-6 text-slate-500">Alliance</h4>
-              <ul className="space-y-4">
-                {['Mission', 'Capabilities', 'Membership'].map((item) => (
-                  <li key={item}>
-                    <a href={`#${item.toLowerCase()}`} className="text-slate-300 hover:text-white transition-colors text-sm font-medium">
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold uppercase tracking-widest text-xs mb-6 text-slate-500">Legal</h4>
-              <ul className="space-y-4">
-                <li><a href="#" className="text-slate-300 hover:text-white transition-colors text-sm font-medium">Privacy</a></li>
-                <li><a href="#" className="text-slate-300 hover:text-white transition-colors text-sm font-medium">Terms</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">

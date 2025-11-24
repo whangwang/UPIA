@@ -60,7 +60,7 @@ export const Navbar: React.FC = () => {
                 ? 'bg-navy-900 text-white border-navy-900 hover:bg-pacific-600 hover:border-pacific-600' 
                 : 'bg-white text-navy-900 border-white hover:bg-slate-200'
             }`}>
-              Contact
+              Join UPIA
             </button>
           </div>
 

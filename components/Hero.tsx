@@ -2,7 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
-export const Hero: React.FC = () => {
+interface HeroProps {
+  onOpenModal: () => void;
+}
+
+export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
   return (
     <section className="relative h-screen min-h-[700px] flex items-center overflow-hidden bg-navy-900">
       {/* Background Video */}
@@ -70,16 +74,21 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-6"
           >
-            <button className="group relative px-8 py-4 bg-white text-navy-900 font-bold uppercase tracking-widest hover:bg-pacific-500 hover:text-white transition-all duration-300">
+            <button 
+              onClick={onOpenModal}
+              className="group relative px-8 py-4 bg-white text-navy-900 font-bold uppercase tracking-widest hover:bg-pacific-500 hover:text-white transition-all duration-300"
+            >
               <span className="flex items-center gap-2 justify-center">
                 Join UPIA
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </span>
             </button>
             
-            <button className="px-8 py-4 border border-white/30 text-white font-bold uppercase tracking-widest hover:bg-white hover:text-navy-900 transition-all duration-300 backdrop-blur-sm">
-              Learn More
-            </button>
+            <a href="#mission">
+              <button className="px-8 py-4 border border-white/30 text-white font-bold uppercase tracking-widest hover:bg-white hover:text-navy-900 transition-all duration-300 backdrop-blur-sm">
+                Learn More
+              </button>
+            </a>
           </motion.div>
         </div>
       </div>

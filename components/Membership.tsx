@@ -35,11 +35,14 @@ const BenefitCard: React.FC<{ image: string, title: string, description: string,
   </motion.div>
 );
 
-export const Membership: React.FC = () => {
+interface MembershipProps {
+  onOpenModal: () => void;
+}
+
+export const Membership: React.FC<MembershipProps> = ({ onOpenModal }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <section id="membership" className="relative py-24 md:py-32 bg-navy-950 overflow-hidden">
-      
       {/* Background Tech Grid */}
       <div className="absolute inset-0 opacity-10 pointer-events-none" 
            style={{ backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px)', backgroundSize: '50px 50px' }}>
@@ -115,6 +118,7 @@ export const Membership: React.FC = () => {
                       <button 
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
+                        onClick={onOpenModal}
                         className="w-full py-6 bg-pacific-600 hover:bg-pacific-500 text-white font-bold text-lg uppercase tracking-widest transition-all shadow-[0_0_20px_rgba(0,102,255,0.3)] hover:shadow-[0_0_30px_rgba(0,102,255,0.5)] flex items-center justify-center gap-3 group"
                       >
                           Apply Now

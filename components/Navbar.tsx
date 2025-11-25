@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
-export const Navbar: React.FC = () => {
+interface NavbarProps {
+  onOpenModal: () => void;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -55,7 +59,9 @@ export const Navbar: React.FC = () => {
                 {link.name}
               </a>
             ))}
-            <button className={`px-6 py-2.5 text-xs font-bold uppercase tracking-widest transition-colors border ${
+            <button 
+              onClick={onOpenModal}
+              className={`px-6 py-2.5 text-xs font-bold uppercase tracking-widest transition-colors border ${
                 isScrolled 
                 ? 'bg-navy-900 text-white border-navy-900 hover:bg-pacific-600 hover:border-pacific-600' 
                 : 'bg-white text-navy-900 border-white hover:bg-slate-200'

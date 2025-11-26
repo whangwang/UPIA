@@ -33,7 +33,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
         <div className="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-900/40 to-navy-900/20 z-10"></div>
       </div>
 
-      <div className="relative z-20 w-full max-w-screen-2xl mx-auto px-6 lg:px-12 pt-20">
+      <div className="relative z-20 w-full max-w-screen-2xl mx-auto px-6 lg:px-12 pt-12">
         <div className="max-w-5xl">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -84,8 +84,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
               </span>
             </button>
             
-            <a href="#mission">
-              <button className="px-8 py-4 border border-white/30 text-white font-bold uppercase tracking-widest hover:bg-white hover:text-navy-900 transition-all duration-300 backdrop-blur-sm">
+            <a className="block" href="#mission">
+              <button className="w-full px-8 py-4 border border-white/30 text-white font-bold uppercase tracking-widest hover:bg-white hover:text-navy-900 transition-all duration-300 backdrop-blur-sm">
                 Learn More
               </button>
             </a>

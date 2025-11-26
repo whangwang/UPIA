@@ -36,14 +36,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer group" onClick={() => window.scrollTo(0,0)}>
             {/* Simple geometric logo mark */}
-            <div className={`w-8 h-8 flex items-center justify-center ${isScrolled ? 'bg-navy-900' : 'bg-white'}`}>
-                <div className={`w-3 h-3 ${isScrolled ? 'bg-white' : 'bg-navy-900'}`}></div>
-            </div>
-            <div className="flex flex-col">
-              <span className={`text-xl font-bold tracking-tight leading-none ${isScrolled ? 'text-navy-900' : 'text-white'}`}>
-                UPIA
-              </span>
-            </div>
+            <img src={isScrolled ? 'images/LogoDarkWithText.svg' : 'images/LogoLightWithText.svg'} alt="UPIA" className="h-8" />
           </div>
 
           {/* Desktop Nav */}
@@ -52,8 +45,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
               <a
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-medium tracking-wide uppercase transition-colors hover:text-pacific-500 ${
-                  isScrolled ? 'text-slate-600' : 'text-slate-300'
+                className={`text-sm font-medium tracking-wide uppercase transition-colors ${
+                  isScrolled ? 'text-slate-600 hover:text-pacific-500' : 'text-slate-300 hover:text-white'
                 }`}
               >
                 {link.name}
@@ -97,9 +90,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
               </a>
             ))}
             <div className="pt-4">
-                 <button className="w-full py-3 bg-navy-900 text-white font-bold uppercase tracking-widest text-sm hover:bg-pacific-600 transition-colors">
-                    Contact
-                 </button>
+              <button 
+                onClick={onOpenModal}
+                className="w-full py-3 bg-navy-900 text-white font-bold uppercase tracking-widest text-sm hover:bg-pacific-600 transition-colors">
+                Join UPIA
+              </button>
             </div>
           </div>
         </div>

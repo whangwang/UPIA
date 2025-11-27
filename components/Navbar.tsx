@@ -36,7 +36,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer group" onClick={() => window.scrollTo(0,0)}>
             {/* Simple geometric logo mark */}
-            <img src={isScrolled ? 'images/LogoDarkWithText.svg' : 'images/LogoLightWithText.svg'} alt="UPIA" className="h-8" />
+            <img src={isScrolled ? 'images/LogoDarkWithName.svg' : 'images/LogoLightWithName.svg'} alt="UPIA" className="h-8" />
           </div>
 
           {/* Desktop Nav */}

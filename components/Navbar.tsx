@@ -19,7 +19,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
 
   const navLinks = [
     { name: 'Mission', href: '#mission' },
-    { name: 'Capabilities', href: '#focus' },
+    { name: 'Activities', href: '#focus' },
     { name: 'Membership', href: '#membership' },
   ];
 

@@ -60,7 +60,7 @@ export const FocusAreas: React.FC = () => {
     <section id="focus" className="py-24 md:py-32 bg-navy-900 relative">
       <div className="max-w-screen-2xl mx-auto px-6 lg:px-12 relative z-10">
         <SectionHeading 
-          title="Capabilities" 
+          title="Focus Areas" 
           subtitle="Supporting innovators across critical defense and dual-use technology sectors."
           theme="dark"
         />

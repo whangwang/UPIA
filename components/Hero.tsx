@@ -14,7 +14,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
         <div className="absolute inset-0 bg-navy-900/20 z-10 mix-blend-multiply"></div>
         <video
           autoPlay
-          loop
           muted
           playsInline
           className="w-full h-full object-cover object-left opacity-100 mix-blend-overlay"
@@ -46,7 +45,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
               Defense & Dual-Use Alliance
             </span>
           </motion.div>
-          
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -55,7 +53,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
           >
             Building the Next Generation of
             <span className="block mt-8 md:mt-4 font-bold text-5xl md:text-6xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-pacific-400 to-white">
-              Cross-Pacific Defense & Dual-Use Innovation
+              Advancing Cross-Pacific Defense & Dual-Use Innovation
             </span>
           </motion.h1>
 

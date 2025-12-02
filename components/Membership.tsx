@@ -50,7 +50,7 @@ export const Membership: React.FC<MembershipProps> = ({ onOpenModal }) => {
 
       <div className="max-w-screen-2xl mx-auto px-6 lg:px-12 relative z-10">
         <SectionHeading 
-          title="Membership Access" 
+          title="Membership Benefits" 
           subtitle="Join a premier network defining the future of Pacific security." 
           theme="dark" 
         />
@@ -60,27 +60,27 @@ export const Membership: React.FC<MembershipProps> = ({ onOpenModal }) => {
           <div className="lg:w-1/2">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <BenefitCard 
-                image="images/membership-global.jpg"
-                title="Global Access" 
-                description="Direct introductions to government stakeholders across Taiwan, Japan, and the U.S."
+                image="images/membership-integration.jpg"
+                title="Government Engagement" 
+                description="Direct access to key decision-makers to understand policies, requirements, and acquisition pathways."
                 delay={0.1}
               />
               <BenefitCard 
-                image="images/membership-network.jpg"
-                title="Industrial Network" 
-                description="Connect with vetted suppliers and manufacturing partners in the APAC region."
+                image="images/membership-policy.jpg"
+                title="Policy & Advocacy" 
+                description="Strategic representation to amplify member interests in defense procurement, regulation, and innovation policy."
                 delay={0.2}
               />
               <BenefitCard 
-                image="images/membership-policy.jpg"
-                title="Policy Intel" 
-                description="Exclusive briefings on regulatory shifts, export controls, and defense budgets."
+                image="images/membership-partnership.jpg"
+                title="Industrial Partnerships" 
+                description="Connections to trusted suppliers, manufacturers, and co-production partners across the Indo-Pacific."
                 delay={0.3}
               />
               <BenefitCard 
-                image="images/membership-integration.jpg"
-                title="Integration" 
-                description="Opportunities for cross-domain capability testing and co-production pilots."
+                image="images/membership-market.jpg"
+                title="Market Intel" 
+                description="Actionable, ground-level intelligence on defense markets, procurement trends, and competitive landscapes."
                 delay={0.4}
               />
             </div>

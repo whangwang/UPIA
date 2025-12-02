@@ -30,18 +30,21 @@ export const Mission: React.FC = () => {
               </p>
             </motion.div>
             
-            <div className="mt-12 pt-12 border-t border-slate-200">
-               <div className="grid grid-cols-2 gap-8">
+            {
+              false &&
+              <div className="mt-12 pt-12 border-t border-slate-200">
+                <div className="grid grid-cols-2 gap-8">
                   <div>
-                      <h4 className="text-4xl font-bold text-navy-900 mb-2">50+</h4>
-                      <p className="text-sm uppercase tracking-widest text-slate-500">Alliance Partners</p>
+                    <h4 className="text-4xl font-bold text-navy-900 mb-2">50+</h4>
+                    <p className="text-sm uppercase tracking-widest text-slate-500">Alliance Partners</p>
                   </div>
                   <div>
-                      <h4 className="text-4xl font-bold text-navy-900 mb-2">2</h4>
-                      <p className="text-sm uppercase tracking-widest text-slate-500">Continents Bridged</p>
+                    <h4 className="text-4xl font-bold text-navy-900 mb-2">2</h4>
+                    <p className="text-sm uppercase tracking-widest text-slate-500">Continents Bridged</p>
                   </div>
-               </div>
-            </div>
+                </div>
+              </div>
+            }
           </div>
 
           <motion.div 

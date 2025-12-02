@@ -22,7 +22,7 @@ export const SectionHeading: React.FC<Props> = ({ title, subtitle, theme = 'ligh
         <div className={`flex items-center gap-3 mb-4 ${align === 'center' ? 'justify-center' : 'justify-start'}`}>
           <span className={`h-[2px] w-6 ${isDark ? 'bg-pacific-500' : 'bg-navy-900'}`}></span>
           <span className={`text-xs font-bold uppercase tracking-[0.2em] ${isDark ? 'text-pacific-400' : 'text-slate-500'}`}>
-            UPIA System
+            UPIA APPROACH
           </span>
         </div>
         

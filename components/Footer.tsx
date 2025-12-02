@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
       <div className="max-w-screen-2xl mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-20">
           <div className="max-w-md">
-            <img src="images/LogoLightWithText.svg" alt="UPIA" className="h-12 mb-8" />
+            <img src="images/LogoLightWithText.svg" alt="UPIA" className="h-12 md:h-32 mb-8" />
             <p className="text-slate-400 font-light leading-relaxed mb-8">
               Accelerating cross-Pacific defense and dual-use innovation through strategic partnerships and industrial integration.
             </p>

@@ -20,7 +20,10 @@ function App() {
         <Mission />
         <FocusAreas />
         <Membership onOpenModal={() => setIsModalOpen(true)} />
-        <Team />
+        {
+          false &&
+          <Team />
+        }
       </main>
       <Footer />
       <AnimatePresence>
